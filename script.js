@@ -1,24 +1,20 @@
 
 // Crea el objeto bird
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+const bird = {
+    birdBottom: 500,
+    div: document.querySelector(".bird"),
+    dibujar: function(){
+        bird.style.left = 250 + "px"
+        bird.div.style.bottom = birdBottom + "px"
+    },
+    mover: function() {
+        birdBottom += 40 
+        bird.style.bottom = birdBottom + "px"
+    },
+    colision: function(){
+        return true (birdBottom < 0);
+    }
+}
 
 // Objeto juego
 // No modifiques el código a partir de aquí *********
